@@ -1,0 +1,31 @@
+{
+	"name": "lockerit",
+	"version": "1",
+	"private": true,
+	"scripts": {
+		"start": "node ./code/bin/www",
+		"dev": "nodemon ./code/bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"ejs": "^3.1.8",
+		"express": "^4.18.2",
+		"express-session": "^1.17.3",
+		"express-validator": "^6.14.2",
+		"http-errors": "~1.6.3",
+		"morgan": "~1.9.1",
+		"mysql2": "^2.3.3",
+		"nodemailer": "^6.8.0"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.20"
+	},
+	"nodemonConfig": {
+		"legacyWatch": true,
+		"ignore": [
+			"node_modules",
+			"code/public"
+		]
+	}
+}
